@@ -21,7 +21,7 @@ jobs:
     steps:
     - name: Make ca-certificates.crt
       run: |
-        wget -N https://raw.githubusercontent.com/curl/curl/master/lib/mk-ca-bundle.pl
+        wget -N https://raw.githubusercontent.com/curl/curl/5ccddf64398c1186deb5769dac086d738e150e09/scripts/mk-ca-bundle.pl
         chmod +x mk-ca-bundle.pl
         ./mk-ca-bundle.pl
         mkdir -p upload
